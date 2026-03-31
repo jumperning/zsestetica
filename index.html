@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ZS Estetica | Ciencia, Estética &amp; Bienestar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .editorial-shadow {
+            box-shadow: 0 30px 60px -12px rgba(28, 28, 25, 0.04), 0 18px 36px -18px rgba(28, 28, 25, 0.06);
+        }
+        .asymmetric-clip {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+        body {
+            background-color: #fcf9f4;
+            color: #1c1c19;
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "tertiary": "#685d43",
+                "surface-dim": "#dcdad5",
+                "primary-container": "#00c086",
+                "outline-variant": "#d2c4b8",
+                "on-tertiary-fixed-variant": "#50462d",
+                "secondary-fixed": "#ffddb7",
+                "surface-bright": "#fcf9f4",
+                "secondary-container": "#ffd9af",
+                "on-secondary-fixed-variant": "#5b4223",
+                "outline": "#80756b",
+                "surface-container-highest": "#e5e2dd",
+                "background": "#fcf9f4",
+                "on-surface": "#1c1c19",
+                "inverse-primary": "#3be0a2",
+                "on-background": "#1c1c19",
+                "secondary-fixed-dim": "#e5c097",
+                "surface-container-low": "#f6f3ee",
+                "surface-container": "#f0ede9",
+                "on-tertiary-container": "#463d25",
+                "inverse-surface": "#31302d",
+                "on-secondary": "#ffffff",
+                "tertiary-fixed-dim": "#d4c5a5",
+                "primary-fixed": "#60fdbc",
+                "surface-container-lowest": "#ffffff",
+                "secondary": "#755938",
+                "surface-container-high": "#ebe8e3",
+                "on-tertiary": "#ffffff",
+                "surface-tint": "#006c4a",
+                "tertiary-container": "#b5a788",
+                "error-container": "#ffdad6",
+                "on-error-container": "#93000a",
+                "primary": "#dfcfbb",
+                "on-surface-variant": "#4e453c",
+                "inverse-on-surface": "#f3f0eb",
+                "on-error": "#ffffff",
+                "on-secondary-fixed": "#2a1700",
+                "on-secondary-container": "#795e3c",
+                "primary-fixed-dim": "#3be0a2",
+                "surface-variant": "#e5e2dd",
+                "on-tertiary-fixed": "#221b06",
+                "surface": "#fcf9f4",
+                "tertiary-fixed": "#f1e1bf",
+                "on-primary-fixed": "#002114",
+                "on-primary-container": "#00472f",
+                "error": "#ba1a1a",
+                "on-primary-fixed-variant": "#005237",
+                "on-primary": "#ffffff"
+              },
+              fontFamily: {
+                "headline": ["Newsreader"],
+                "body": ["Manrope"],
+                "label": ["Manrope"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+            },
+          },
+        }
+      </script>
+</head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fcf9f4]/80 dark:bg-[#1c1c19]/80 backdrop-blur-xl shadow-sm shadow-[#1c1c19]/5">
+<nav class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-[#dfcfbb] dark:text-[#00c086] font-headline tracking-tight">
+     <img src="https://zsestetica.com.ar/wp-content/uploads/2026/03/logo.png" alt="zsestetica" class=" max-h-[75px]"> 
+            </div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-[#dfcfbb] dark:text-[#00c086] border-b-2 border-[#c5a37c] pb-1  font-medium tracking-tight Newsreader" href="#">Home</a>
+<a class="text-[#4a4a44] dark:text-[#e5e2dd] hover:text-[#dfcfbb] transition-colors  font-medium tracking-tight Newsreader" href="#about">Quienes somos</a>
+<a class="text-[#4a4a44] dark:text-[#e5e2dd] hover:text-[#dfcfbb] transition-colors  font-medium tracking-tight Newsreader" href="#services">Servicios</a>
+<a class="text-[#4a4a44] dark:text-[#e5e2dd] hover:text-[#dfcfbb] transition-colors  font-medium tracking-tight Newsreader" href="#contact">Contacto</a>
+</div>
+<a class="hidden sm:block bg-primary hover:opacity-80 transition-all duration-300 text-on-primary px-6 py-2.5 rounded-full text-sm font-semibold flex items-center gap-2 group shadow-lg shadow-primary/10" href="https://wa.me/#">
+<span class="material-symbols-outlined text-lg" data-icon="chat">chat</span>
+               Escribinos al WhatsApp
+            </a>
+</nav>
+</header>
+<main>
+<!-- Hero Section: Editorial & Impactful -->
+<section class="relative min-h-[921px] flex items-center pt-24 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Hero Background" class="w-full h-full object-cover opacity-90 scale-105" data-alt="Serene woman in a bright wellness clinic environment with soft sunlight streaming through high windows and lush indoor plants" src="https://zsestetica.com.ar/wp-content/uploads/2026/03/ChatGPT-Image-11-mar-2026-12_51_01.png"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
+</div>
+<div class="container mx-auto px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div class="max-w-xl">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-widest mb-6">
+             
+                    </span>
+<h1 class="text-6xl md:text-7xl font-headline font-medium text-on-surface leading-[1.1] mb-8 tracking-tight">
+                        Ciencia, Estética <br/>&amp; <span class="italic text-primary">Bienestar</span>
+</h1>
+<p class="text-xl text-on-surface-variant font-body leading-relaxed mb-10 max-w-md">
+                       
+Atención integral para la mujer:
+Somos un consultorio médico transdisciplinario orientado a la salud femenina integral. Combinamos la ginecología, el diagnóstico por imágenes y la medicina estética con un enfoque funcional, regenerativo y preventivo. No tratamos síntomas aislados, acompañamos personas.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl hover:scale-105 transition-all" href="#services">
+                            Nuestros Servicios
+                        </a>
+<a class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-full font-bold text-lg hover:bg-surface-container-high transition-all" href="#about">
+                            Conocer al Equipo
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="py-32 bg-surface" id="services">
+<div class="container mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-5xl font-headline text-on-surface mb-6">Especialidades Médicas</h2>
+<p class="text-lg text-on-surface-variant">Un enfoque holístico para cada etapa de tu vida, respaldado por tecnología de vanguardia y calidez humana.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Ginecología -->
+<div class="md:col-span-2 group relative overflow-hidden rounded-xl bg-surface-container-low p-10 transition-all hover:bg-secondary-container/30">
+<div class="relative z-10 h-full flex flex-col">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="female">female</span>
+<h3 class="text-3xl font-headline mb-4">Ginecología Integral</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Control ginecológico preventivo, patología mamaria y salud reproductiva personalizada.</p>
+<!--a class="mt-auto inline-flex items-center text-primary font-bold gap-2" href="#">
+                                Ver más <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a-->
+</div>
+</div>
+<!-- Obstetricia -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-highest p-10 transition-all hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="child_care">child_care</span>
+<h3 class="text-2xl font-headline mb-4">Obstetricia</h3>
+<p class="text-sm text-on-surface-variant mb-6">Acompañamiento cálido y experto durante todo tu embarazo y posparto.</p>
+</div>
+<!-- Estética -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-lowest border border-outline-variant/10 p-10 transition-all hover:shadow-xl">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="text-2xl font-headline mb-4">Medicina Estética</h3>
+<p class="text-sm text-on-surface-variant mb-6">Tratamientos mínimamente invasivos para realzar tu belleza natural con elegancia.</p>
+</div>
+<!-- Nutrición -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-low p-10 transition-all hover:bg-secondary-container/20">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="eco">eco</span>
+<h3 class="text-2xl font-headline mb-4">Nutrición &amp; Metabolismo</h3>
+<p class="text-sm text-on-surface-variant mb-6">Planes personalizados para un equilibrio hormonal y vitalidad plena.</p>
+</div>
+<!-- Psicología / Bienestar -->
+<div class="md:col-span-2 group relative overflow-hidden rounded-xl bg-primary text-on-primary p-10">
+<div class="flex flex-col md:flex-row gap-8 items-center h-full">
+<div class="flex-1">
+<h3 class="text-3xl font-headline mb-4">Bienestar Emocional</h3>
+<p class="opacity-90 mb-6 leading-relaxed">Espacios de escucha y herramientas psicológicas para el equilibrio de la mujer actual.</p>
+<button class="bg-on-primary text-primary px-6 py-2 rounded-full font-bold text-sm">Agendar Consulta</button>
+</div>
+<div class="hidden md:block w-40 h-40 rounded-full overflow-hidden border-4 border-on-primary/20">
+<img alt="Wellness" class="w-full h-full object-cover" data-alt="Soft focused detail of hands holding a warm cup of herbal tea representing calmness and mental wellness" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGAFVEvzP1nsPIY9Cre_NOIB6MjRo8KIYGpl2fRT2UdrqnX1B9ei_62Yw2ffkgn4fwXHnjk2_BeXBioUhKUo2FXvhFXYPzO4KVf6ZowJKNF67qOpgnwBk2PYG69mISnniD6eBSj8bNVnii72oFO0kfF1c8la_oae50lWm72hg6MNq6fbv39nrKF2WFja4wmgJzo8b-GxE7HP5MtKaeayssrH5sZpkMQjkFFTdnroTB6ZJ9hT8TTj-Jm96oNgTTXjdvAtP0oVScgRc"/>
+</div>
+</div>
+</div>
+<!-- Laboratorio -->
+<div class="group relative overflow-hidden rounded-xl bg-tertiary-container/20 p-10 transition-all">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="biotech">biotech</span>
+<h3 class="text-2xl font-headline mb-4">Laboratorio</h3>
+<p class="text-sm text-on-surface-variant mb-6">Estudios diagnósticos con la mayor precisión y rapidez.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us Section: Personal & Warm -->
+<section class="py-32 bg-surface-container-low overflow-hidden" id="about">
+<div class="container mx-auto px-8">
+<div class="text-center mb-24 max-w-3xl mx-auto">
+<h2 class="text-5xl font-headline text-on-surface mb-8">Nuestras Fundadoras</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed italic">
+                        "Creemos en una medicina que escucha, que entiende los ritmos femeninos y que prioriza la prevención como el acto más grande de amor propio."
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<!-- Dr. Carolina Ziade -->
+<div class="flex flex-col md:flex-row gap-8 items-center md:items-start group">
+<div class="relative w-72 h-[28rem] flex-shrink-0">
+<div class="absolute inset-0 bg-primary/5 rounded-t-full translate-x-4 translate-y-4 -z-10 transition-transform group-hover:translate-x-6 group-hover:translate-y-6"></div>
+<img alt="Dr. Carolina Ziade" class="w-full h-full object-cover rounded-t-full editorial-shadow" data-alt="Professional portrait of Dr. Carolina Ziade, a smiling female doctor in a soft beige clinical coat, looking approachable and confident" src="https://zsestetica.com.ar/wp-content/uploads/2026/03/Foto-Caro-edited.jpg"/>
+</div>
+<div class="flex-1 space-y-6 pt-12">
+<div>
+<h3 class="text-3xl font-headline text-on-surface">Dr. Carolina Ziade</h3>
+<p class="text-primary font-bold tracking-widest uppercase text-xs mt-2">Médica Tocoginecóloga | Especialista en Ginecología Regenerativa, Funcional y Estética.</p>
+</div>
+<p class="text-on-surface-variant leading-relaxed">Experta en energías aplicadas a la ginecología (Láser) y Cirugía Íntima Genital.</p>
+<div class="flex flex-col gap-4">
+<span class="bg-surface px-4 py-2 rounded-lg text-xs font-semibold text-secondary">posgrado en Medicina Estética (SAEME-UBA)</span>
+<span class="bg-surface px-4 py-2 rounded-lg text-xs font-semibold text-secondary">Psico-inmuno-neuro-endocrinología (Universidad Favaloro).</span>
+</div>
+</div>
+</div>
+<!-- Dr. Sandra Suttin -->
+<div class="flex flex-col md:flex-row-reverse gap-8 items-center md:items-start group">
+<div class="relative w-72 h-[28rem] flex-shrink-0">
+<div class="absolute inset-0 bg-secondary-container/20 rounded-t-full -translate-x-4 translate-y-4 -z-10 transition-transform group-hover:-translate-x-6 group-hover:translate-y-6"></div>
+<img alt="Dr. Sandra Suttin" class="w-full h-full object-cover rounded-t-full editorial-shadow" data-alt="Professional portrait of Dr. Sandra Suttin, a female healthcare specialist with a warm expression in a modern, brightly lit clinic office" src="https://zsestetica.com.ar/wp-content/uploads/2026/03/fotoo.png"/>
+</div>
+<div class="flex-1 space-y-6 pt-12 text-right">
+<div>
+<h3 class="text-3xl font-headline text-on-surface">Dr. Sandra Suttin</h3>
+<p class="text-primary font-bold tracking-widest uppercase text-xs mt-2">Médica Especialista en Diagnóstico por Imágenes | Medicina Orthomolecular.</p>
+</div>
+<p class="text-on-surface-variant leading-relaxed">Realización de ecografías de piel de alta resolución aplicada a la evaluación y prevención de complicaciones en medicina estética y dermatología.</p>
+<div class="flex flex-col gap-4 justify-end">
+<span class="bg-surface px-4 py-2 rounded-lg text-xs font-semibold text-secondary">Cuenta con formación de posgrado en Medicina Estética (SAEME-UBA)</span>
+<span class="bg-surface px-4 py-2 rounded-lg text-xs font-semibold text-secondary">Psico-inmuno-neuro-endocrinología (Universidad Favaloro)</span>
+<span class="bg-surface px-4 py-2 rounded-lg text-xs font-semibold text-secondary">Postgrado en Medicina Orthomolecular (FIMON)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- WhatsApp Floating CTA -->
+<div class="fixed bottom-10 right-10 z-50">
+<a class="flex items-center gap-3 bg-[#25D366] text-white px-6 py-4 rounded-full shadow-2xl hover:scale-110 transition-transform group" href="https://wa.me/#">
+<span class="material-symbols-outlined text-3xl" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-bold">Reserva Online</span>
+</a>
+</div>
+<!-- Contact & Location Section -->
+<section class="py-32 bg-surface" id="contact">
+<div class="container mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div class="space-y-12">
+<h2 class="text-5xl font-headline text-on-surface">Ubicación &amp; Contacto</h2>
+<div class="space-y-8">
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center flex-shrink-0 text-on-secondary-container">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1">Visítanos</h4>
+<p class="text-on-surface-variant">Sánchez de Bustamante 2088, 2° B<br/>CABA, Argentina</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center flex-shrink-0 text-on-secondary-container">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1">Escríbenos</h4>
+<p class="text-on-surface-variant">hola@zsestetica.com.ar<br/>WhatsApp: +54 11 3379 3598</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center flex-shrink-0 text-on-secondary-container">
+<span class="material-symbols-outlined" data-icon="schedule">schedule</span>
+
+
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1">Encontranos desde</h4>
+<p class="text-on-surface-variant">desde las 8:00<br/>hasta las 20:00</p>
+
+</div>
+</div>
+</div>
+<div class="pt-8">
+<h4 class="font-bold mb-4 uppercase tracking-widest text-xs text-outline">Síguenos</h4>
+<div class="flex gap-4">
+<a class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="photo_camera">photo_camera</span>
+</a>
+
+</div>
+</div>
+</div>
+<div class="h-[600px] rounded-3xl overflow-hidden editorial-shadow bg-surface-container-high border-8 border-surface-container">
+<!-- Map Representation -->
+<div class="w-full h-full relative">
+<img alt="Ubicación" class="w-full h-full object-cover" data-alt="Minimalistic map representation of an urban area with soft muted colors and a elegant pin marker" data-location="Buenos Aires" src="https://zsestetica.com.ar/wp-content/uploads/2026/03/Screenshot-2026-03-20-at-9.21.09-AM.png"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<div class="relative">
+<div class="w-16 h-16 bg-primary rounded-full animate-ping absolute inset-0 opacity-20"></div>
+<div class="w-6 h-6 bg-primary rounded-full border-4 border-on-primary relative z-10"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f6f3ee] dark:bg-[#1c1c19] w-full rounded-t-[2rem] mt-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-serif text-[#dfcfbb] mb-6">ZS Estetica</div>
+<p class="text-[#71716a] dark:text-[#a3a39c] font-sans text-sm leading-relaxed Manrope">
+                    Un espacio dedicado a la salud femenina integral, donde la ciencia y el cuidado se encuentran para brindarte una experiencia transformadora.
+                </p>
+</div>
+<div>
+<h5 class="text-[#dfcfbb] font-semibold mb-6 font-sans text-sm">Navegación</h5>
+<ul class="space-y-4">
+<li><a class="text-[#71716a] dark:text-[#a3a39c] hover:text-[#c5a37c] transition-colors font-sans text-sm leading-relaxed Manrope" href="#">Home</a></li>
+<li><a class="text-[#71716a] dark:text-[#a3a39c] hover:text-[#c5a37c] transition-colors font-sans text-sm leading-relaxed Manrope" href="#">Quienes somos?</a></li>
+<li><a class="text-[#71716a] dark:text-[#a3a39c] hover:text-[#c5a37c] transition-colors font-sans text-sm leading-relaxed Manrope" href="#">Servicios</a></li>
+<li><a class="text-[#71716a] dark:text-[#a3a39c] hover:text-[#c5a37c] transition-colors font-sans text-sm leading-relaxed Manrope" href="#">Contacto</a></li>
+</ul>
+</div>
+
+<div>
+<h5 class="text-[#dfcfbb] font-semibold mb-6 font-sans text-sm">Newsletter</h5>
+<p class="text-[#71716a] dark:text-[#a3a39c] font-sans text-sm leading-relaxed Manrope mb-4">Recibe consejos de bienestar exclusivos en tu correo.</p>
+<div class="flex gap-2">
+<input class="bg-surface-container-lowest border-none rounded-full px-4 py-2 text-sm w-full focus:ring-2 focus:ring-primary" placeholder="Tu Email" type="email"/>
+<button class="bg-primary text-on-primary w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-sm" data-icon="send">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant/10 px-12 py-8 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[#71716a] dark:text-[#a3a39c] font-sans text-sm leading-relaxed Manrope">© 2026.</p>
+<div class="flex gap-8">
+<span class="material-symbols-outlined text-[#71716a]" data-icon="eco">eco</span>
+<span class="material-symbols-outlined text-[#71716a]" data-icon="spa">spa</span>
+</div>
+</div>
+</footer>
+</body></html>
